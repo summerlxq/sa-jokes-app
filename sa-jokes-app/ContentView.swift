@@ -2,9 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var jokes = [Joke(setup: "Why did the chicken cross the road?",
-                      punchline: "To get to the other side!"),
-                 Joke(setup: "Why couldn't the bicycle stand up?",
+    var jokes = [Joke(setup: "Why couldn't the bicycle stand up?",
                       punchline: "It was two tired!"),
                  Joke(setup: "Is this pool safe for diving?",
                       punchline: "It deep ends"),
@@ -13,7 +11,9 @@ struct ContentView: View {
                  Joke(setup: "Did you hear about the cheese factory that exploded in France?",
                       punchline: "There was nothing left but de Brie"),
                  Joke(setup: "Dad, can you put my shoes on?",
-                      punchline: "I dont think they'll fit me")]
+                      punchline: "I dont think they'll fit me"),
+                 Joke(setup: "Why did the chicken cross the road?",
+                                   punchline: "To get to the other side!"),]
     
     @State private var showPunchline = false
     @State private var currentJoke = 0
